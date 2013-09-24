@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<title>Ipse dixit</title>
+<script type="text/javascript">
+//https://code.google.com/p/microajax/
+function microAjax(B,A){this.bindFunction=function(E,D){return function(){return E.apply(D,[D])}};this.stateChange=function(D){if(this.request.readyState==4){this.callbackFunction(this.request.responseText)}};this.getRequest=function(){if(window.ActiveXObject){return new ActiveXObject("Microsoft.XMLHTTP")}else{if(window.XMLHttpRequest){return new XMLHttpRequest()}}return false};this.postBody=(arguments[2]||"");this.callbackFunction=A;this.url=B;this.request=this.getRequest();if(this.request){var C=this.request;C.onreadystatechange=this.bindFunction(this.stateChange,this);if(this.postBody!==""){C.open("POST",B,true);C.setRequestHeader("X-Requested-With","XMLHttpRequest"); C.setRequestHeader("Content-type","application/x-www-form-urlencoded");C.setRequestHeader("Connection","close")}else{C.open("GET",B,true)}C.send(this.postBody)}};
+</script>
+<style>
+/*http://www.ilikepixels.co.uk/drop/bubbler/*/
+.bubble 
+{
+position: relative;
+width: 300px;
+height: 150px;
+padding: 0px;
+background: #FFFFFF;
+-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+border-radius: 10px;
+border: #7F7F7F solid 2px;
+}
+
+.bubble:after 
+{
+content: '';
+position: absolute;
+border-style: solid;
+border-width: 15px 0 15px 25px;
+border-color: transparent #FFFFFF;
+display: block;
+width: 0;
+z-index: 1;
+margin-top: -15px;
+right: -25px;
+top: 75%;
+}
+
+.bubble:before 
+{
+content: '';
+position: absolute;
+border-style: solid;
+border-width: 16px 0 16px 26px;
+border-color: transparent #7F7F7F;
+display: block;
+width: 0;
+z-index: 0;
+margin-top: -16px;
+right: -28px;
+top: 75%;
+}
+#int{width:800px;height:500px;position:relative;}
+#giann{position:absolute;width:800px;height:500px;z-index:-1;}
+#speech{position:absolute;z-index:1; padding:5px; left:30px;top:150px; font-family:Verdana;}
+</style>
+</head>
+<body>
+<div id="int">
+<div class="bubble" id="speech">Hello</div>
+<img src="stiv.jpg" id="giann" style=""/>
+</div>
+<script>
+if(!String.prototype.trim){  
+  String.prototype.trim = function(){  
+    return this.replace(/^\s+|\s+$/g,'');  
+  };  
+}
+microAjax("gianninismo.txt",function(res){
+var quotesArr=res.split("%");
+var id=Math.floor((Math.random()*quotesArr.length));
+document.getElementById("speech").innerHTML='<p>'+quotesArr[id].trim()+'</p>';
+});
+</script>
+</body>
+</html>
