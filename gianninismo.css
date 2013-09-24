@@ -1,0 +1,63 @@
+/*http://www.ilikepixels.co.uk/drop/bubbler/*/
+.bubble 
+{
+position: relative;
+width: 300px;
+height: 150px;
+padding: 0px;
+background: #FFFFFF;
+-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+border-radius: 10px;
+border: #7F7F7F solid 2px;
+}
+
+.bubble:after 
+{
+content: '';
+position: absolute;
+border-style: solid;
+border-width: 15px 0 15px 25px;
+border-color: transparent #FFFFFF;
+display: block;
+width: 0;
+z-index: 1;
+margin-top: -15px;
+right: -25px;
+top: 75%;
+}
+
+.bubble:before 
+{
+content: '';
+position: absolute;
+border-style: solid;
+border-width: 16px 0 16px 26px;
+border-color: transparent #7F7F7F;
+display: block;
+width: 0;
+z-index: 0;
+margin-top: -16px;
+right: -28px;
+top: 75%;
+}
+#int{width:800px;height:500px;position:relative;float:left;}
+#giann{position:absolute;width:800px;height:500px;z-index:-1;}
+#speech{position:absolute;z-index:1; padding:5px; left:30px;top:150px; font-family:Verdana;}
+#menu{float:right;}
+
+.btn {
+    text-decoration: none;
+    background: #274a71;
+    line-height: 35px;
+    padding: 8px 0;
+    text-align: center;
+    color: white;
+    margin: 5px auto;
+    text-shadow: none;
+    font-size: 16px;
+    width: 150px;
+    vertical-align: middle; 
+    display:inline-block;  border:none;
+    font-family:Verdana;
+    }
