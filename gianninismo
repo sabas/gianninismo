@@ -1,0 +1,135 @@
+#!/bin/bash
+#
+#################################################################################
+#										#
+#    This program is free software: you can redistribute it and/or modify	#
+#    it under the terms of the GNU General Public License as published by	#
+#    the Free Software Foundation, either version 3 of the License, or		#
+#    (at your option) any later version.					#
+#										#
+#    This program is distributed in the hope that it will be useful,		#
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of		#
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the		#
+#    GNU General Public License for more details.				#
+#										#
+#    You should have received a copy of the GNU General Public License		#
+#    along with this program.  If not, see <http://www.gnu.org/licenses/>.      #
+#										#
+#################################################################################
+#
+#                                                      `-:syyyydddyo:--.                       
+#                                                   `.-:////+sssyhdmdhhs-``                          
+#                                                  `--.....-:////+oshmmmho+/-`                       
+#                                               `:/-`````..-://++++osydmmmdhs:`                      
+#                                             `.:+.  ```..--:/+oossssyhdmNNmms-                      
+#                                             `/y:   ``....-:/+osssssyydmNNNmy`                      
+#                                             `/s    ``....-:/+osssssyyhmNNNNh.                      
+#                                              ./     `.....-/ossssyyyyhmNNNNs`                      
+#                                              .   `````.-:+shhhhdddhyyhmNNm/                       
+#                                               ``.-:.` `-+syso+yhhhhhyyhNNy                        
+#                                                  `.so:  :yhhhy+ddddhyyysdmy                        
+#                                                    -:.  :syhhyyyyyyysyysyms                        
+#                                                        `/syhyysssssssyyyhmo                        
+#                                                     `` `:syhdsooossyyhhhdd+                        
+#                                                     ..``-oyyho:/osyhhhddms.                        
+#        E il Gianninismo fu.                         ```.::hhys/:+shhhdddm-                         
+#                                                     ````/-+yyys++yhddddmd`                         
+#                                                  `  -` `-:+syhyoohdmdmmNo                          
+#                                                  -.``  `:ossyhhhhdmNNNNNh`                         
+#                                                  `//:-..:oyhdmmNNNNNNMNMMd+`                       
+#                                                   `oooo+++sdmdmMMNNNMMMMMMMmhyo-.`                 
+#                                                   `:dsyyhh+:/-oNNMMMMMMMMMMMMMMMmdyo-`             
+#                                               `.:ydNMNmhhy-```.+dMMMMMMMMMMMMMMMMMMMMmy+:.`        
+#                                            .:ohNMMMNMMMMm-`.`  `-smMMMMMMMMMMMMMMMMMMMMMMNdhs+:..` 
+#                                        `.+hNMMMMMNNNNMMMd.``````:sdNMMMMMMMMMMMMMMMMMMMMMMMMMMMMNmh
+#                                     `:shNMMMMMMMMMNNNNNy..``./:/+ydNmMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+#                                 `./yNMMMMMMMMNMMMMNNNN+-```.:o+ssyhmNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+#                               .odNMMMMMMMMMMMNNNNNNNNs```-:://+ossydNNMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+#                             .sNMMMMMMMMMMMMMMNNNMNMMMh.-:///++/+osyhdmNMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+#                            :NMMMMMMMMMMMMMMMMMMMMMMMMMh++///++++ossyhdNMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+#                           /NMMMMMMMMMMMMMMMMMMMMMMMMMMNmyso++++/+oooyhdNMMMMMMMMMMMMMMMMMMMMMMMMMMM
+#                          /NMMMMMMMMMMMNNNMMMMMMMMMMMMMMNNdo+++//++/+oosydMMMMMMMMMMMMMMMMMMMMNMMMMM
+#
+num_quotes=49
+rand=$[ ( $RANDOM % $num_quotes ) + 1 ]
+case $rand in
+  1) quote="In principio fu il participio passato.";;
+  2) quote="Every day you can discover something new in KDE. 
+Join to us, join to Dragons!";;
+  3) quote="'Gli amici si vedono nel momento del bisogno' deve averlo inventato un cane.";;
+  4) quote="Arciere deluso? Ho la soluzione che fa per te! 
+Torna a casa Debian e smanetta in compagnia di gente smanettosa.";;
+  5) quote="Secondo me la Terra usa KDE, cioè l'avete visto l'alone blu che si vede nelle foto riprese dallo spazio?";;
+  6) quote="Snowden deve essere propri disparato per aver chiesto asilo politico all'Italia.";;
+  7) quote="Uno spettro si aggira per l'Europa: lo spettro del Software Libero e dei formati aperti!";;
+  8) quote="Su Bubbuntu non posso bombare.";;
+  9) quote="Ho provato a rimettermi insieme a openSUSE ma lei non ha voluto﻿.";;
+  10) quote="Secondo me Flash è responsabile del surriscaldamento del Pianeta.";;
+  11) quote="Ho visto il Samsung Premiere 2013 e mi ha fatto piacere notare che hanno pubblicizzato l'iMac l'iPad e il Macbook Air.";;
+  12) quote="Fai come il tucano: su Linux installa sempre tutto a mano.";;
+  13) quote="Scegli Ubuntu e derivate e risparmierai ore di compilazione che potrai dedicare alle cose a cui tiene di più.";;
+  14) quote="Guiderò GNU/Linux alla conquista dell'Universo Mondo. Unisciti alla rivoluzione. Pinguinizziamo il Mondo.";;
+  15) quote="Ma i nerd fumano la sigaretta elettronica?";;
+  16) quote="Gli Arcieri sono come i Melari: hanno sempre da ridire sui bug degli altri ma in realtà sono loro i portatori di bug.";;
+  17) quote="Chi bell' vo' parè nu Mac adda suffrì.";;
+  18) quote="Un fork al giorno leva il software stabile di torno.";;
+  19) quote="Salverò Trozzy dal Signore di Mordor!";;
+  20) quote="Derivates, derivates, derivates!";;
+  21) quote="Siamo noi la luce dell'amore 
+porta via il buio dal tuo cuore.";;
+  22) quote="Garantisco anche la luce: sono meglio delle rinnovabili.";;
+  23) quote="Rosso, giallo più 
+rosa, nero e blu.";;
+  24) quote="Komblotto!";;
+  25) quote="È un complotto del piismo!";;
+  26) quote="Sento una puzza provenire da me stesso.";;
+  27) quote="Ma se sfoggio una giacca.. vuol dire che la caccio dalla città?";;
+  28) quote="Il Gianninismo è per l'amore informatico libero. Basta che non sia insano come l'amore per la Apple.";;
+  29) quote="E forza il gianninismooo
+è il momento di credereee
+nel Gianniniii
+che c'è anche in teee.";;
+  30) quote="Tutte le azioni buone e giuste portano al Gianninismo;
+restando sulla retta via udirete la voce del Giannini che c'è in Voi.";;
+  31) quote="Passa al Gianninismo: abbiamo navi che sembrano rotelle taglia-pizza.";;
+  32) quote="Mai odiare il Mondo, il Mondo potrebbe ricambiare il sentimento
+e se il Mondo ricambia son cazzi
+perché il Mondo sono TANTI!!!!!";;
+  33) quote="Passa al Gianninismo e imparerete come bruciare il Cosmo che c'è in Voi!";;
+  34) quote="Diffidate dal Piismo: esso professa la strada sbagliata come le mappe di iPhone.";;
+  35) quote="Il nuovo iMac insegna che bisogna sempre guardare le cose dalla giusta prospettiva.";;
+  36) quote="Se Mint è una derivata di Ubuntu allora Debian è l'integrale di Ubuntu?";;
+  37) quote="Vota e fai Votare Gianninismo
+Con noi inizia la Vera RiVoluzione.";;
+  38) quote="La gente vive come se ci fosse sempre un treno da prendere ma la vita non va vissuta così.
+Rilassatevi gente.";;
+  39) quote="Il tempo finirà quando dal cielo cadrà la grande Mela e allora i Pinguini si riveleranno nella loro vera forma di distruttori.";;
+  40) quote="Sono Mimmolo......
+Orso Mimmolo........
+Giannini......
+..........bang.......";;
+  41) quote="Vabbè Stallman, si sa, vive in un mondo tutto suo dove le marmotte impacchettano il kernel.";;
+  42) quote="Ma perché ho i brillantini in faccia?";;
+  43) quote="Ve lo riparo io il pc,
+belle gnocche!";;
+  44) quote="Sono due giorni che sto a giocare con una trottola improvvisata.";;
+  45) quote="Io non conosco mezze misure. Infatti sono una sesta abbondante.";;
+  46) quote="Vado a prendere due piselli e torno.";;
+  47) quote="Qualcosa è uscito da me e si sta espandendo";;
+  48) quote="Vota e fai votare Giannini per una Microsoft meno micro e più soft.";;
+  49) quote="A volte è meglio una distro finta ma funzionante che una distro vera ma piena di problemi.";;
+esac
+echo "( Il Maestro disse: «$quote» )
+	o
+	 o
+           _._ 
+          /_ _\. 
+          (.X.)| 
+          |\_/ | 
+          )____ \ 
+         //_V _\ \ 
+        ((  |   (_) 
+       / \>     / \ 
+       \  \.__./  / 
+         -      -   "
+
